@@ -11,6 +11,7 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Student extends Human {
     //double to hold GPA
     private double gpa;
+    private int credits;
 
     /**
      * The Student constructor takes in a name and age and creates an instance 
@@ -18,8 +19,9 @@ public class Student extends Human {
      * @param name
      * @param age 
      */
-    public Student(String name, short age) {
+    public Student(String name, short age, int credits) {
         super(name, age);
+        this.credits = credits;
     }
 
     /**
