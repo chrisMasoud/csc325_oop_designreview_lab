@@ -11,29 +11,32 @@ import java.util.Scanner;
  * @author MoaathAlrajab
  */
 public class MainClass {
-	
-	public static void main(String[] args) {
 
-		Student std1= new Freshman("James", 20, 12); // name, age, credits
-                
-                Student std2 = new Senior("John", 30, 90);
-		
-		// ToDo 11: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
-		Scanner sc = new Scanner(System.in);
-                System.out.println("What is Student 1's GPA?");
-                double std1Gpa = sc.nextDouble();
-                std1.setGpa(std1Gpa);
-                System.out.println("What is Student 2's GPA?");
-                double std2Gpa = sc.nextDouble();
-                std2.setGpa(std2Gpa);
-		System.out.println(std1);
-                
-                System.out.println(std2);
-		
-		// ToDo 12: add comments and explain your code
-		
-		// ToDo 13: submit using a pull request.
-	}
+    public static void main(String[] args) {
+
+        //Student variable to hold Freshman reference
+        Student std1 = new Freshman("James", 20, 12);
+        //Student variable to hold Senior reference
+        Student std2 = new Senior("John", 30, 90);
+        //Scanner to get user input
+        Scanner sc = new Scanner(System.in);
+        //Prompt user for std1 gpa
+        System.out.println("What is Student 1's GPA?");
+        //Get user input
+        double std1Gpa = sc.nextDouble();
+        //Set std1 gpa
+        std1.setGpa(std1Gpa);
+        //Prompt user for std2 gpa
+        System.out.println("What is Student 2's GPA?");
+        //Get ser input
+        double std2Gpa = sc.nextDouble();
+        //Set std2 gpa
+        std2.setGpa(std2Gpa);
+        //Output Freshman toString()
+        System.out.println(std1);
+        //Output Senior toString()
+        System.out.println(std2);
+
+    }
 
 }
