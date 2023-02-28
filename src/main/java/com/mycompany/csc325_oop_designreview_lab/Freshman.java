@@ -16,7 +16,7 @@ public class Freshman extends Student {
 
     @Override
     public String toString() {
-        return String.format("Freshman{ Name: %s, Age: %d, GPA: %.1f, Credits: %d", getName(), getAge(), getGpa(), getCredits());
+        return String.format("Freshman{ Name: %s, Age: %d, GPA: %.1f, Credits: %d }", getName(), getAge(), getGpa(), getCredits());
     }
     
 }
